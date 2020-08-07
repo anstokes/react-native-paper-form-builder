@@ -158,7 +158,7 @@ function FormBuilder(props: FormBuilderPropType) {
         control={form.control}
         onChange={onChange}
       />
-      {form.errors[input.name] && input.type !== 'custom' && (
+      {form.errors[input.name] && (
         <HelperText
           style={{
             color: colors.error,
